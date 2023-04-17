@@ -1,0 +1,203 @@
+
+.login{
+  background:rgb(72, 105, 184);
+}
+
+.signupLink{
+  text-decoration: none;
+  color: rgb(169, 13, 99);
+}
+.login_header{
+  color:rgb(230, 235, 247);
+}
+body{
+  background:rgb(201, 199, 195) ;
+}
+.Logo_Heading{
+  font-style:italic;
+  color: rgb(107, 32, 105);
+}
+
+/* quiz  */
+.quiz {
+  height: 100vh;
+  display: flex;
+  background-color: #020230;
+  color: white;
+}
+
+.main {
+  width: 75%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #020230), url(./Assets/bg\ \(1\).jpg) center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.top {
+
+  height: 50%;
+  position: relative;
+}
+
+.timer {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 5px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 10px;
+  left: 80px;
+}
+
+.bottom {
+  height: 50%;
+}
+
+.pyramid {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moneyList {
+  list-style: none;
+  width: 100%;
+  padding: 20px;
+}
+
+.moneyListItem {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.moneyListItem.active {
+  background-color: teal;
+}
+
+.moneyListItemNumber {
+  font-size: 18px;
+  font-weight: 100;
+  width: 30%;
+}
+
+.moneyListItemAmount {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.trivia {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.questions {
+  width: 80%;
+  background: linear-gradient(#100241, black);
+  border: 2px solid white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.answer {
+  width: 40%;
+  text-align: center;
+  background: linear-gradient(#0e1024, #22074d);
+  border: 1px solid white;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+  margin: 10px 10px 20px 10px;
+}
+
+.answers {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.answer:hover,
+.answer.active {
+  background: mediumblue;
+}
+
+.answer.correct {
+  /* animation:correct 3s ease forwards ; */
+  background: rgb(0, 128, 66);
+}
+
+/* @keyframes correct {
+  0%,22%,42%{
+    background: mediumblue;
+  }
+  20%,40%,60%{
+    background: linear-gradient(#0e0124,#22074d);
+  }
+  62%,100%{
+    background: rgb(0, 128, 66);
+  }
+} */
+.answer.wrong {
+  /* animation:correct 3s ease forwards ; */
+  background: crimson;
+}
+
+/* @keyframes wrong {
+  0%,22%,42%{
+    background: mediumblue;
+  }
+  20%,40%,60%{
+    background: linear-gradient(#0e0124,#22074d);
+  }
+  62%,100%{
+    background: crimson;
+  }
+} */
+
+.endText {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.loGOut{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  border-radius: 50px;
+  color: white;
+  background-color: #020230;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+@media (width<=650px) {
+  .main{
+    width: 50%;
+  }
+  .pyramid{
+    width: 50%;
+  }
+}
